@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteira Digital - Transferência</title>
+    <link rel="stylesheet" href="tran.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="icons/logo2.png" alt="Pay+">
+        </div>
+        <div class="transfer-form">
+            <h2>Transferência</h2>
+            <form action="#">
+                <label for="recipient">Destinatário:</label>
+                <input type="text" id="recipient" name="recipient" placeholder="Nome do destinatário">
+                
+                <label for="pix-key-type">Tipo de Chave PIX:</label>
+                <select id="pix-key-type" name="pix-key-type">
+                    <option value="cpf">CPF</option>
+                    <option value="phone">Telefone</option>
+                    <option value="random">Chave Aleatória</option>
+                    <option value="email">E-mail</option>
+                    <option value="cnpj">CNPJ</option>
+                </select>
+
+                <label for="pix-key">Chave PIX:</label>
+                <input type="text" id="pix-key" name="pix-key" placeholder="Digite a chave PIX">
+
+                <label for="amount">Valor:</label>
+                <input type="number" id="amount" name="amount" placeholder="Valor da transferência">
+                
+                <div class="form-actions">
+                    <a href="index.html" class="btn">Voltar</a>
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
